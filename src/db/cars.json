@@ -1,0 +1,345 @@
+{
+  "cars": [
+    {
+      "level": 1,
+      "cover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/1138.jpg",
+      "brandName": "Mercedes-Benz",
+      "series": [
+        {
+          "level": 3,
+          "seriesName": "CLS-klasse AMG",
+          "seriesCover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/1089.jpg",
+          "carsList": [
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/1089.jpg",
+              "generalInformation": {
+                "year": "2012",
+                "brand": "Mercedes-Benz",
+                "engine": "63 AMG 5.5 AT",
+                "bodyType": "Wagon",
+                "model": "CLS-klasse AMG"
+              },
+              "engineTransmission": {
+                "fuel": "Diesel",
+                "fuelCapacity": "57 liters",
+                "fuelSupply": "Common rail"
+              },
+              "runningFeatures": {
+                "maxSpeed": "226 km/h",
+                "acceleration": "7.6 s"
+              },
+              "priceData": {
+                "discount": 50000,
+                "price": 2500000
+              }
+            },
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/1116.jpg",
+              "generalInformation": {
+                "year": "2007",
+                "brand": "Mercedes-Benz",
+                "engine": "63 AMG 5.5",
+                "bodyType": "Coupe",
+                "model": "CLS-klasse (W218)"
+              },
+              "engineTransmission": {
+                "fuel": "Diesel",
+                "fuelCapacity": "63 liters",
+                "fuelSupply": "Common rail"
+              },
+              "runningFeatures": {
+                "maxSpeed": "216 km/h",
+                "acceleration": "10.1 s"
+              },
+              "priceData": {
+                "discount": 25000,
+                "price": 269000
+              }
+            },
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/1123.jpg",
+              "generalInformation": {
+                "year": "2003",
+                "brand": "Mercedes-Benz",
+                "engine": "320i 2.0 AT (184 HP)",
+                "bodyType": "Hatchback",
+                "model": "3er Hatchback"
+              },
+              "engineTransmission": {
+                "fuel": "Diesel",
+                "fuelCapacity": "63 liters",
+                "fuelSupply": "Common rail"
+              },
+              "runningFeatures": {
+                "maxSpeed": "229 km/h",
+                "acceleration": "7 s"
+              },
+              "priceData": {
+                "discount": 500000,
+                "price": 1000000
+              }
+            },
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/model_heighten_list2/uploads/1112.jpg",
+              "generalInformation": {
+                "year": "2003",
+                "brand": "Mercedes-Benz",
+                "engine": "320i 2.0 AT (184 HP)",
+                "bodyType": "Hatchback",
+                "model": "3er (F3x)"
+              },
+              "engineTransmission": {
+                "fuel": "Diesel",
+                "fuelCapacity": "63 liters",
+                "fuelSupply": "Common rail"
+              },
+              "runningFeatures": {
+                "maxSpeed": "229 km/h",
+                "acceleration": "7 s"
+              },
+              "priceData": {
+                "discount": 40000,
+                "price": 460000
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "cover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/1004.jpg",
+      "brandName": "BMW",
+      "series": [
+        {
+          "level": 3,
+          "seriesName": "3er",
+          "seriesCover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/919.jpg",
+          "carsList": [
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/model_widen/uploads/921.jpg",
+              "generalInformation": {
+                "year": "2012",
+                "brand": "BMW",
+                "engine": "2.0d (184Hp) AT",
+                "bodyType": "Sedan",
+                "model": "3er Touring (F31)"
+              },
+              "engineTransmission": {
+                "fuel": "Diesel",
+                "fuelCapacity": "57 liters",
+                "fuelSupply": "Common rail"
+              },
+              "runningFeatures": {
+                "maxSpeed": "226 km/h",
+                "acceleration": "7.6 s"
+              },
+              "priceData": {
+                "discount": 50000,
+                "price": 2500000
+              }
+            },
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/model_heighten_list2/uploads/933.jpg",
+              "generalInformation": {
+                "year": "2007",
+                "brand": "BMW",
+                "engine": "320i (156 HP)",
+                "bodyType": "Coupe",
+                "model": "3er Cabrio (E92)"
+              },
+              "engineTransmission": {
+                "fuel": "Diesel",
+                "fuelCapacity": "63 liters",
+                "fuelSupply": "Common rail"
+              },
+              "runningFeatures": {
+                "maxSpeed": "216 km/h",
+                "acceleration": "10.1 s"
+              },
+              "priceData": {
+                "discount": 90000,
+                "price": 1800000
+              }
+            },
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/model_widen/uploads/926.jpg",
+              "generalInformation": {
+                "year": "2003",
+                "brand": "BMW",
+                "engine": "320i 2.0 AT (184 HP)",
+                "bodyType": "Hatchback",
+                "model": "3er Hatchback (F3x)"
+              },
+              "engineTransmission": {
+                "fuel": "Diesel",
+                "fuelCapacity": "63 liters",
+                "fuelSupply": "Common rail"
+              },
+              "runningFeatures": {
+                "maxSpeed": "229 km/h",
+                "acceleration": "7 s"
+              },
+              "priceData": {
+                "discount": 40000,
+                "price": 3580000
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "seriesName": "1 series",
+          "seriesCover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/9991.jpg",
+          "carsList": [
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/model_widen/uploads/9991.jpg",
+              "generalInformation": {
+                "year": "2014",
+                "brand": "BMW",
+                "engine": "420i 2.0 AT (184 HP)",
+                "bodyType": "Hatchback",
+                "model": "4er Liftback"
+              },
+              "engineTransmission": {
+                "fuel": "Petrol",
+                "fuelCapacity": "60 liters",
+                "fuelSupply": "Injection"
+              },
+              "runningFeatures": {
+                "maxSpeed": "236 km/h",
+                "acceleration": "7.6 s"
+              },
+              "priceData": {
+                "discount": 240000,
+                "price": 2640000
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "cover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/290.jpg",
+      "brandName": "Ferrari",
+      "series": [
+        {
+          "seriesName": "Enzo",
+          "seriesCover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/298.jpg",
+          "level": 2,
+          "carsList": [
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/model_widen/uploads/298.jpg",
+              "generalInformation": {
+                "year": "2002",
+                "brand": "Ferrari",
+                "engine": "6.0 V12 (660 HP)",
+                "bodyType": "Coupe",
+                "model": "Enzo"
+              },
+              "engineTransmission": {
+                "fuel": "Petrol",
+                "fuelCapacity": "110 liters",
+                "fuelSupply": "Injection"
+              },
+              "runningFeatures": {
+                "maxSpeed": "350 km/h",
+                "acceleration": "3.65 s"
+              },
+              "priceData": {
+                "discount": 50000,
+                "price": 5000000
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "cover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/2702.jpg",
+      "brandName": "Lamborghini",
+      "series": [
+        {
+          "level": 2,
+          "seriesName": "Huracan",
+          "seriesCover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/2706.jpg",
+          "carsList": [
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/model_widen/uploads/2705.jpg",
+              "generalInformation": {
+                "year": "2013",
+                "brand": "Lamborghini",
+                "engine": "5.2 AT (610 HP) 4WD",
+                "bodyType": "Coupe",
+                "model": "Huracan"
+              },
+              "engineTransmission": {
+                "fuel": "Petrol",
+                "fuelCapacity": "98 liters",
+                "fuelSupply": "Injection"
+              },
+              "runningFeatures": {
+                "maxSpeed": "325 km/h",
+                "acceleration": "3.2 s"
+              },
+              "priceData": {
+                "discount": 250000,
+                "price": 4000000
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "cover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/477.jpg",
+      "brandName": "Ford",
+      "series": [
+        {
+          "level": 2,
+          "seriesName": "Mustang",
+          "seriesCover": "https://www.car-info.com/media/cache/squared_thumbnail1/uploads/482.jpg",
+          "carsList": [
+            {
+              "level": 3,
+              "imageUrl": "https://www.car-info.com/media/cache/model_widen/uploads/482.jpg",
+              "generalInformation": {
+                "year": "2013",
+                "brand": "Ford",
+                "engine": "3.8 V6 (147 HP)",
+                "bodyType": "Coupe",
+                "model": "Mustang Convertible IV"
+              },
+              "engineTransmission": {
+                "fuel": "Petrol",
+                "fuelCapacity": "98 liters",
+                "fuelSupply": "Injection"
+              },
+              "runningFeatures": {
+                "maxSpeed": "325 km/h",
+                "acceleration": "3.2 s"
+              },
+              "priceData": {
+                "discount": 250000,
+                "price": 480000
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

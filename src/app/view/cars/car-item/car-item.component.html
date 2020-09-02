@@ -1,0 +1,45 @@
+<div class="data-content">
+  <ng-container *ngIf="allBrandData.length">
+    <div class="car-item"
+         (click)="onNavigate(brand.brandName)"
+         *ngFor="let brand of allBrandData">
+      <div class="car-item-image">
+        <img [src]="brand.cover" alt="">
+      </div>
+      <div class="count">
+        {{brand.series.length}} series
+      </div>
+      <div class="name">
+        {{brand.brandName}}
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="carSeriesData.length">
+    <div class="car-item"
+         (click)="onNavigate(series.seriesName)"
+         *ngFor="let series of carSeriesData">
+      <div class="car-item-image">
+        <img [src]="series.seriesCover" alt="">
+      </div>
+      <div class="count">
+        {{series.carsList.length}} Cars
+      </div>
+      <div class="name">
+        {{series.seriesName}}
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="carsListData.length">
+    <div class="car-item"
+         (click)="onEmitCarData(car)"
+         *ngFor="let car of carsListData">
+      <div class="car-item-image">
+        <img [src]="car.imageUrl" alt="">
+      </div>
+      <div class="name">
+        {{car.generalInformation.brand}}
+      </div>
+    </div>
+  </ng-container>
+</div>
+

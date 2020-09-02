@@ -1,0 +1,283 @@
+.dialog-main {
+  .dialog-header {
+    position: relative;
+    margin: 0 4%;
+  }
+
+  .dialog-title {
+    font-size: 22px;
+    font-weight: 600;
+    .mark {
+      color: var(--greyColor);
+    }
+  }
+
+  .close {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    right: -42px;
+    top: -8px;
+    color: var(--primaryColor);
+  }
+
+  .car-info {
+    width: 100%;
+    background: #fff;
+    margin-top: 15px;
+    height: 125px;
+    border-radius: 12px;
+    box-shadow: 0 2px 2px rgba(212, 215, 218, 0.3), 0 1px 1px rgba(0, 0, 0, 0.07);
+    display: flex;
+
+    .car-image {
+      width: 174px;
+      border-radius: 8px;
+      overflow: hidden;
+      display: inline-flex;
+
+      img {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .characters {
+    display: flex;
+
+    div {
+      display: flex;
+      flex-flow: column;
+      margin-right: 20px;
+    }
+
+    div span:nth-of-type(1) {
+      color: var(--greyColor);
+    }
+
+    div span:nth-of-type(2) {
+      margin-top: 12px;
+      font-weight: 500;
+    }
+  }
+
+
+  .car-data {
+    margin-left: 4%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+  }
+
+  .car-name {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .car-name span:nth-of-type(1) {
+    font-weight: 600;
+  }
+
+  .car-name span:nth-of-type(2) {
+    color: var(--greyColor);
+  }
+
+  .price-data {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: auto;
+    padding-right: 30px;
+  }
+
+  .discount {
+    background: var(--primaryColor);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 22px;
+    font-size: 18px;
+    margin-bottom: 8px
+  }
+
+  .car-price {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .car-price span:nth-of-type(1) {
+    color: var(--greyColor);
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+
+  .car-price span:nth-of-type(2) {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .credit-settings {
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px 15px 15px;
+    margin-left: -24px;
+    box-shadow: 0 2px 2px rgba(212, 215, 218, 0.3), 0 1px 1px rgba(0, 0, 0, 0.07);
+
+    .title {
+      color: var(--greyColor);
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+  }
+
+  .slider-options {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px auto;
+
+
+  }
+
+  .initial-fee, .pay-monthly, .credit-term {
+    width: 32%;
+    border: 1px solid var(--greyColor);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 80px;
+
+    .title {
+      color: var(--greyColor);
+      font-size: 18px;
+      line-height: 22px;
+      padding: 6px 12px;
+    }
+
+    .info-row {
+      padding: 4px 20px 4px 12px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    .info-row span:nth-of-type(1) {
+      color: var(--textColor);
+    }
+
+    .info-row span:nth-of-type(2) {
+      color: var(--greyColor);
+    }
+
+    .info-row span span:nth-of-type(1) {
+      color: var(--greyColor);
+    }
+  }
+  .credit-info {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .credit-info div {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .data-info {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+
+  .data-info.pmt {
+    font-weight: 600;
+  }
+
+  .send-request button {
+    padding: 10px 25px !important;
+  }
+
+  .dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    height: 105px;
+  }
+
+  .question-block div {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .question-block div span:nth-of-type(1){
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  .question-block div span:nth-of-type(2){
+    font-size: 12px;
+    color: var(--greyColor);
+  }
+
+  .dialog-footer button {
+    background: transparent!important;
+    color: var(--primaryColor)!important;
+    border: 1px solid var(--primaryColor);
+    box-shadow: none!important;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+::ng-deep .ng5-slider .ng5-slider-pointer {
+  width: 20px !important;
+  height: 20px !important;
+  top: -18px !important;
+  background-color: #FF730C !important;
+  outline: none !important;
+}
+
+::ng-deep .ng5-slider .ng5-slider-bar-wrapper {
+  margin-top: -26px !important;
+}
+
+::ng-deep .ng5-slider {
+  width: 100% !important;
+  margin: 29px 0 0px !important;
+}
+
+::ng-deep .ng5-slider .ng5-slider-pointer:after {
+  visibility: hidden !important;
+}
+
+::ng-deep span.ng5-slider-span.ng5-slider-bubble.ng5-slider-limit.ng5-slider-floor {
+  display: none;
+}
+
+::ng-deep span.ng5-slider-span.ng5-slider-bubble.ng5-slider-limit.ng5-slider-ceil {
+  display: none;
+}
+
+::ng-deep span.ng5-slider-span.ng5-slider-bubble.ng5-slider-model-value {
+  display: none;
+}
+
+::ng-deep .ng5-slider .ng5-slider-bar {
+  height: 2px !important;
+  background: #C4C4C4 !important;
+}
+
+::ng-deep .ng5-slider .ng5-slider-selection {
+  background: #FF730C !important;
+  visibility: visible;
+}

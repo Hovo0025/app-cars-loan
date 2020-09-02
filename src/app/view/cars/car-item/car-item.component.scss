@@ -1,0 +1,41 @@
+.data-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 8px);
+}
+
+.car-item {
+  width: calc(25% - 8px);
+  min-width: 215px;
+  margin: 0 8px 8px 0;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #c3c3c36b;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(212, 215, 218, .3), 0 1px 1px rgba(0, 0, 0, .07);
+  cursor: pointer;
+
+  .car-item-image {
+    img {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  .count {
+    color: var(--greyColor);
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .name {
+    color: var(--textColor);
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+
+

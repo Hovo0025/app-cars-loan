@@ -1,0 +1,10 @@
+<div class="body-main">
+  <div class="navigate-back">
+    <ng-container *ngIf="!allBrands.length" (click)="onNavigateBack()">
+      <span class="material-icons">arrow_back_ios</span> Back
+    </ng-container>
+  </div>
+    <app-car-item [allBrandData]="allBrands"
+                  [carSeriesData]="brandSeries"
+                  [carsListData]="carsList"></app-car-item>
+</div>

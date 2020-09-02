@@ -1,0 +1,121 @@
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #353535;
+  background: var(--background);
+}
+
+//scrollbar styles
+
+.scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar {
+  background: 0 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  position: absolute;
+  border-radius: 5px;
+  background: rgba(0,0,0,.36);
+  -webkit-box-shadow: none;
+}
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: rgba(0,0,0,.1);
+}
+
+
+/* input[type=number], hide arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+.no-text-selection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.prevent-tap-highlight {
+  -webkit-tap-highlight-color: transparent;
+}
+
+//buttons
+.button-orange {
+  display: inline-flex;
+  justify-content: center;
+  background: var(--primaryColor);
+  border-radius: 41px;
+  padding: 10px 21px;
+  align-items: center;
+  font-weight: normal;
+  font-size: 18px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button.button-orange {
+  border: none;
+}
+
+button.button-orange:disabled {
+  background: #c7c7c7;
+  cursor: default;
+}
+
+
+.mat-button,
+.mat-flat-button,
+.mat-stroked-button,
+.mat-raised-button {
+  border-radius: 6px!important;
+  min-width: 130px !important;
+  text-transform: none !important;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25)!important;
+
+}
+
+// see button doc
+.mat-flat-button:disabled {
+  box-shadow: none!important;
+  color: #fff!important;
+}
+
+
+//pagination
+:host ::ng-deep.mat-paginator .mat-paginator-container{
+  //justify-content: flex-start;
+  color: #353535;
+}
+

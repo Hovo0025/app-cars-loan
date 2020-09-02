@@ -1,0 +1,134 @@
+<div class="dialog-main">
+  <div class="dialog-header">
+    <div class="close no-text-selection" (click)="dialogRef.close();">
+      <span class="material-icons">close</span>
+    </div>
+    <div class="dialog-title">
+      Расчет кредита
+      <span class="mark">
+        {{carItem.generalInformation.brand }}
+        {{carItem.generalInformation.model}}
+      </span>
+    </div>
+    <div class="car-info">
+      <div class="car-image">
+        <img [src]="carItem.imageUrl" alt="">
+      </div>
+      <div class="car-data">
+        <div class="car-name">
+          <span>{{carItem.generalInformation.brand}}&nbsp;</span>
+          <span>{{carItem.generalInformation.model }}</span>
+        </div>
+        <div class="characters">
+          <div>
+            <span>Engine</span>
+            <span>{{carItem.generalInformation.engine}}</span>
+          </div>
+          <div>
+            <span>Year</span>
+            <span>{{carItem.generalInformation.year}}</span>
+          </div>
+          <div>
+            <span>Body type</span>
+            <span>{{carItem.generalInformation.bodyType}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="price-data no-text-selection">
+        <div class="discount">Скидка {{carItem.priceData.discount}} &#8381;</div>
+        <div class="car-price">
+          <span>Стоимость автомобиля</span>
+          <span>{{carPrice}} &#8381;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="credit-settings">
+    <div class="title">НАСТРОЙКИ КРЕДИТА</div>
+    <div class="slider-options">
+      <div class="initial-fee">
+        <div class="title">Первоначальный взнос</div>
+        <div class="info-row">
+          <span>{{initialFeeMinValue}}<span> &#8381;</span></span>
+          <span>{{initialFeePercent}}%</span>
+        </div>
+        <ng5-slider
+          [(value)]="initialFeeMinValue"
+          [options]="initialFeeSliderOptions"
+          (valueChange)="onValueChanges($event)"
+        ></ng5-slider>
+      </div>
+      <div class="pay-monthly">
+        <div class="title">Готов платить в месяц</div>
+        <div class="info-row">
+          <span>{{payMonthlySliderMinValue}}<span> &#8381;</span></span>
+        </div>
+        <ng5-slider
+          [(value)]="payMonthlySliderMinValue"
+          (valueChange)="onValueChanges($event)"
+          (userChangeEnd)="onUserChangeEnd($event, 'pay-monthly')"
+          [options]="payMonthlySliderOptions"
+        ></ng5-slider>
+      </div>
+      <div class="credit-term">
+        <div class="title">Срок кредита</div>
+        <div class="info-row">
+          <span>{{creditTermSliderMinValue}}<span> месяцев</span></span>
+          <span>{{creditTermSliderMinValue / 12 }} лет</span>
+        </div>
+        <ng5-slider
+          [(value)]="creditTermSliderMinValue"
+          (valueChange)="onValueChanges($event)"
+          (userChangeEnd)="onUserChangeEnd($event, 'credit-term')"
+          [options]="creditTermSliderOptions"
+        ></ng5-slider>
+      </div>
+    </div>
+    <div class="credit-info">
+      <div class="payment-amount">
+        <div class="title">Сумма выплата</div>
+        <div class="data-info">
+          от {{((pmt * creditTermSliderMinValue) - (carPrice - initialFeeMinValue)).toFixed()}}
+          &#8381;
+        </div>
+      </div>
+      <div class="interest-rate">
+        <div class="title">
+          Процентная ставка
+        </div>
+        <div class="data-info">
+          от {{feePercent}}%
+        </div>
+      </div>
+      <div class="payment-per-month">
+        <div class="title">
+          Платеж в месяц
+        </div>
+        <div class="data-info pmt">
+          от {{pmt}} &#8381;/мес
+        </div>
+      </div>
+      <div class="send-request">
+        <button mat-flat-button
+                type="button"
+                (click)="onSendRequest()"
+                color="primary">
+          Отправить заяавку
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="dialog-footer">
+    <div class="question-block">
+      <div>
+        <span>Возникли вопросы?</span>
+        <span>Ответим на любые вопросы по расчету кредита</span>
+      </div>
+    </div>
+    <button mat-flat-button
+            type="button"
+            color="primary">
+      Получить консультацию
+    </button>
+  </div>
+</div>

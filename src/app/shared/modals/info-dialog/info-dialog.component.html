@@ -1,0 +1,20 @@
+<div class="info-dialog-body">
+  <div class="close no-text-selection" (click)="dialogRef.close();">
+    <span class="material-icons">close</span>
+  </div>
+  <div class="image-block">
+    <img src="https://vistapointe.net/images/rocket-7.jpg" alt="">
+  </div>
+  <div class="title">
+    {{data.title}}
+  </div>
+  <div class="info-text">
+    {{data.infoTxt}}
+  </div>
+  <button mat-flat-button
+          (click)="onNavigateMainPage()"
+          type="button"
+          color="primary">
+    {{data.btnTxt}}
+  </button>
+</div>

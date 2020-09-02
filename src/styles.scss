@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/application';
+
+.car-item-dialog .mat-dialog-container {
+  max-width: 92vw;
+  max-height: calc(100vh - 55px);
+  min-width: 860px;
+  height: 100%;
+  width: 100%;
+  margin: 32px auto;
+  background-color: var(--background);
+}
+
+.info-dialog .mat-dialog-container {
+  max-width: 430px;
+  position: relative;
+  margin: 54px auto;
+  background-color: #fff;
+  height: 430px;
+  text-align: center;
+}
+

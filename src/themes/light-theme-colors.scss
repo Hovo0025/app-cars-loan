@@ -1,0 +1,67 @@
+$dark-primary-contrast: #3d3d3d;
+$light-primary-contrast: white;
+$light-theme-primary-color: (
+  50: #FFEEE2,
+  100: #FFD5B6,
+  200: #FFB986,
+  300: #FF9D55,
+  400: #FF8830,
+  500: #FF730C,
+  600: #FF6B0A,
+  700: #FF6008,
+  800: #FF5606,
+  900: #FF4303,
+  A100: #FFFFFF,
+  A200: #FFF5F2,
+  A400: #FFCCBF,
+  A700: #FFB8A6,
+  contrast: (
+    50: $dark-primary-contrast,
+    100: $dark-primary-contrast,
+    200: $dark-primary-contrast,
+    300: $dark-primary-contrast,
+    400: $light-primary-contrast,
+    500: $light-primary-contrast,
+    600: $light-primary-contrast,
+    700: $light-primary-contrast,
+    800: $light-primary-contrast,
+    900: $light-primary-contrast,
+    A100: $dark-primary-contrast,
+    A200: $dark-primary-contrast,
+    A400: $dark-primary-contrast,
+    A700: $light-primary-contrast
+  )
+);
+
+$light-theme-accent-color: (
+  50: #ddsa,
+  100: #asd,
+  200: #dsdd,
+  300: #dssa,
+  400: #FF8830,
+  500: #FF730C,
+  600: #FF6B0A,
+  700: #FF6008,
+  800: #FF5606,
+  900: #FF4303,
+  A100: #FFFFFF,
+  A200: #FFF5F2,
+  A400: #FFCCBF,
+  A700: #FFB8A6,
+  contrast: (
+    50: $dark-primary-contrast,
+    100: $dark-primary-contrast,
+    200: $dark-primary-contrast,
+    300: $light-primary-contrast,
+    400: $light-primary-contrast,
+    500: $light-primary-contrast,
+    600: $light-primary-contrast,
+    700: $light-primary-contrast,
+    800: $light-primary-contrast,
+    900: $light-primary-contrast,
+    A100: $dark-primary-contrast,
+    A200: $dark-primary-contrast,
+    A400: $light-primary-contrast,
+    A700: $light-primary-contrast
+  )
+);
