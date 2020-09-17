@@ -137,7 +137,7 @@
   .slider-options {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 10px auto;
 
 
@@ -149,6 +149,7 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     height: 80px;
+    margin-right: 25px;
 
     .title {
       color: var(--greyColor);

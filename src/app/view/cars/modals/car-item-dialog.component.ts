@@ -13,10 +13,8 @@ import { CreditOptions } from '@constants/index';
 export class CarItemDialogComponent implements OnInit {
   public carItem: CarItemModel;
   public initialFeeMinValue: number;
-  public payMonthlySliderMinValue = 0;
   public creditTermSliderMinValue: number;
   public initialFeeSliderOptions: Options;
-  public payMonthlySliderOptions: Options;
   public creditTermSliderOptions: Options;
   public initialFeePercent = CreditOptions.initialFeePercent;
   public feePercent = CreditOptions.feePercent;
@@ -59,26 +57,6 @@ export class CarItemDialogComponent implements OnInit {
   }
 
   /**
-   * calls from template
-   * output ng5slider slider change end event
-   *
-   * @param e type @event
-   * @param option type string
-   *
-   * @return null
-   */
-  public onUserChangeEnd(e, option) {
-    if (option === 'credit-term') {
-      this.payMonthlySliderMinValue = (e.value / 12) * 1000;
-    } else {
-      const monthCount = (this.payMonthlySliderMinValue / 1000) * 12;
-      if (monthCount <= CreditOptions.creditTermsMonthMax) {
-        this.creditTermSliderMinValue = monthCount;
-      }
-    }
-  }
-
-  /**
    * ng5slider basic option set
    *
    * @return null
@@ -89,12 +67,6 @@ export class CarItemDialogComponent implements OnInit {
       animate: false,
       ceil: this.carPrice,
       step: (this.carPrice * CreditOptions.feePercentStep) / 100,
-    };
-    this.payMonthlySliderOptions  = {
-      floor: 1000,
-      animate: false,
-      ceil: CreditOptions.creditTermsMonthMax * 1000 / 12,
-      step: 1000,
     };
     this.creditTermSliderOptions = {
       floor: this.creditTermSliderMinValue,

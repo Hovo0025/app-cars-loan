@@ -58,18 +58,6 @@
           (valueChange)="onValueChanges($event)"
         ></ng5-slider>
       </div>
-      <div class="pay-monthly">
-        <div class="title">Готов платить в месяц</div>
-        <div class="info-row">
-          <span>{{payMonthlySliderMinValue}}<span> &#8381;</span></span>
-        </div>
-        <ng5-slider
-          [(value)]="payMonthlySliderMinValue"
-          (valueChange)="onValueChanges($event)"
-          (userChangeEnd)="onUserChangeEnd($event, 'pay-monthly')"
-          [options]="payMonthlySliderOptions"
-        ></ng5-slider>
-      </div>
       <div class="credit-term">
         <div class="title">Срок кредита</div>
         <div class="info-row">
@@ -79,7 +67,6 @@
         <ng5-slider
           [(value)]="creditTermSliderMinValue"
           (valueChange)="onValueChanges($event)"
-          (userChangeEnd)="onUserChangeEnd($event, 'credit-term')"
           [options]="creditTermSliderOptions"
         ></ng5-slider>
       </div>
